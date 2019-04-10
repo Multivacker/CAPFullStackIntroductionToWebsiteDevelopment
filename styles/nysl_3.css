@@ -1,0 +1,556 @@
+/* Holaaa! Arrancamos! Reseteamos valores de estilo predefinidos para todos los navegadores actuales existentes, según el standar de Meyers*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Reajustamos la función de visualización de HTML5 para todos los navegadores antiguos */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-image: url(backgroundpattern.jpg);
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Por Fiin!!! ya es como que tenemos una hoja en blanco para empezar!! */
+/*//////////////////////////////////////////////////////////////////////*/
+
+/* Acá empezampos a aplicar los estilos!! */
+
+/* El estilo del body, este estilo se aplica a todo lo que contenga la página */
+body {
+    background-color: chartreuse;
+    font-family: Arial;
+    font-size: 0.85em;
+    -webkit-filter: drop-shadow(0px 10px 20px black);
+}
+
+/* El estilo para el encabezado */
+header {
+    background-image: url(design3_image1.jpg);
+    background-position: 0px 428px;
+    height: 385px;
+    width: 850px;
+    margin: 0px auto;
+}
+
+/* Este es el estilo para el título principal del encabezado */
+header h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+    color: white;
+    text-shadow: 3px 3px 3px #033949;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+
+/* Creamos un estilo para el div que contiene el subtítulo de la page */
+.subtitlebox {
+    /*background-color: #033949;*/
+    background-image: linear-gradient(to right, chartreuse, #033949, #033949);
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    margin-top: 310px;
+    color: white;
+    text-align: right;
+    padding-top: 8px;
+    padding-right: 20px;
+    height: 30px;
+}
+
+/* El estilo que tiene el logotipo de la liga */
+.logonysl img {
+    float: left;
+    margin-top: -325px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    -webkit-filter: drop-shadow(10px 10px 10px black);
+}
+
+/* Dejamos el encabezado atrás y le damos estilo al contenido general de la page */
+.content {
+    background-image: url(design3_image2.jpg);
+    background-position: -400px -300px;
+    width: 850px;
+    height: 760px;
+    margin: 0px auto;
+    background-color: aquamarine;
+}
+
+/* Le damos estilo al menú */
+.menu {
+    float: right;
+    color: white;
+    font-weight: bold;
+    line-height: 48px;
+    display: inline;
+}
+
+/* Estilo para el botón de menu */
+.menu a {
+    text-decoration: none;
+}
+
+.menu li {
+    display: inline;
+    margin: 12px;
+    color: white;
+    padding: 8px;
+    background-color: #033949;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* Estilo para el botón de menu cuando le pasamos el mouse por arriba */
+.menu a:hover {
+    color: chartreuse;
+}
+
+/* Estilo para el botón de menu pulsado */
+.menu a:visited {
+    color: white;
+    background-color: chartreuse;
+}
+
+#selected {
+    background-color: chartreuse;
+    color: grey;
+}
+
+/* Estilo general para los eventos de la liga */
+.calendar {
+    float: left;
+    line-height: 18px;
+    margin-left: 50px;
+    margin-top: 120px;
+}
+
+/* Estilo para las fechas */
+.calendar h4 {
+    color: #033949;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Estilo para el contenido del About*/
+.contentabout {
+    float: left;
+    width: 50%;
+    line-height: 18px;
+    margin-left: 50px;
+    margin-top: 30px;
+    text-shadow: 0px 0px 1px white;
+}
+
+/* Estilo para los títulos del About*/
+.contentabout h2 {
+    color: #033949;
+    font-weight: bold;
+}
+
+/* Estilo para el contenido del Contact */
+.contentcontact {
+    float: left;
+    margin-top: 250px;
+    width: 75%;
+    margin-left: 30px;
+    font-size: 0.85em;
+}
+
+/* Estilo para el link del Contact */
+.contentcontact a {
+    color: #033949;
+}
+
+/* Estilo para el ícono del Contact */
+.contentcontact i {
+    color: #033949;
+    font-size: 4.5em;
+}
+
+/* Estilo para el reglamento */
+section {
+    width: 590px;
+    height: 500px;
+    background-color: LightCyan;
+    right: 2%;
+    top: 15%;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 2px 2px 5px #000;
+    text-align: justify;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.rules {
+    background-image: url(design3_image3.jpg);
+    height: 740px;
+    color: white;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+}
+
+.boxrules {
+    border: 2px solid chartreuse;
+    border-radius: 8px;
+    height: 580px;
+    padding: 50px;
+    line-height: 18px;
+    text-align: justify;
+    text-shadow: 1px 1px black;
+    overflow-y: scroll;
+}
+
+.rules ul,
+li,
+p {
+    margin-left: 50px;
+    line-height: 22px;
+}
+
+.rules ul {
+    list-style-type: square;
+}
+
+.rules ul ol {
+    list-style-type: circle;
+}
+
+.rules ol ol {
+    list-style-type: lower-alpha;
+}
+
+.rules img {
+    width: 60px;
+    height: 60px;
+    align-content: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.rules h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 9px;
+}
+
+.rules h2 {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.rules h3 {
+    text-align: center;
+    margin: 5px;
+    color: chartreuse;
+    font-weight: bold;
+}
+
+.rules h4 {
+    text-align: center;
+}
+
+/* Estilos para el game Info */
+.gameinfo {
+    background-image: url(design3_image4.jpg);
+    height: 740px;
+    color: white;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+}
+
+.boxgameinfo {
+    border: 2px solid chartreuse;
+    border-radius: 8px;
+    height: 580px;
+    padding: 50px;
+    line-height: 18px;
+    text-align: justify;
+    text-shadow: 1px 1px black;
+    overflow-y: scroll;
+}
+
+.gameinfo img {
+    width: 60px;
+    height: 60px;
+    align-content: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.gameinfo table {
+    text-align: center;
+    margin: 0px auto;
+    width: 90%;
+    line-height: 30px;
+    border-radius: 12px;
+}
+
+.gameinfo thead {
+    border: 2px solid chartreuse;
+    background-color: rgba(0, 255, 0, 50);
+    margin: 8px;
+}
+
+.gameinfo h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 9px;
+}
+
+.gameinfo h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.gameinfo h3 {
+    text-align: center;
+    margin: 5px;
+    color: chartreuse;
+    font-weight: bold;
+}
+
+/* Estilos para la lista de mapas */
+.listmap {
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+}
+
+.listmap a {
+    color: chartreuse;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.listmap a:hover {
+    color: white;
+}
+
+.listmap a:active {
+    color: forestgreen;
+}
+
+/* Estilo para el mapa */
+.map {
+    width: 50%;
+    height: 600px;
+    float: right;
+}
+
+/*Estilo para el formulario*/
+.registration {
+    background-image: url(design3_image5.jpg);
+    height: 740px;
+    color: white;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.registration img {
+    width: 60px;
+    height: 60px;
+    align-content: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.boxregistration {
+    border: 2px solid chartreuse;
+    border-radius: 8px;
+    height: 580px;
+    padding: 50px;
+    line-height: 38px;
+    text-shadow: 1px 1px black;
+    overflow-y: scroll;
+}
+
+.boxregistration h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.boxregistration p {
+    margin-left: -1px;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+input[type=text],
+input[type=date],
+input[type=tel],
+input[type=email] {
+    background-color: rgba(76, 175, 80, 0.0);
+    border: none;
+    border-bottom: 2px solid chartreuse;
+}
+
+input[type=checkbox] {
+    background-color: rgba(76, 175, 80, 0.0);
+    border: 2px solid chartreuse;
+    margin-left: 12px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.submitBtn {
+    margin: 12px;
+    color: white;
+    padding: 8px;
+    background-color: #033949;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px black;
+    float: right;
+}
+
+.advise {
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0px auto;
+}
+
+/* Y por fin, el estilo para el pie */
+footer {
+    height: 30px;
+    width: 850px;
+    margin: 0px auto;
+    background-color: #033949;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7em;
+    text-align: center;
+    padding-top: 12px;
+}
+
+footer img {
+    float: right;
+    margin-top: -25px;
+}

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <!--Linkeamos el html con las hojas de estilo creadas en la carpeta styles-->
+    <link rel="stylesheet" href="styles/nysl_3.css">
+    <!--Agregamos la tipografía del logo desde la API de Google-->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <!--Agregamos los íconos desde fontawesome.com-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<!--Acá empieza el Body-->
+
+<body>
+
+    <!--Acá empieza el Header-->
+    <header>
+        <h1>Northside Youth Soccer League</h1>
+        <div class="subtitlebox">
+            <h2>Registration</h2>
+        </div>
+        <div class="logonysl">
+            <img src="styles/nysl_logo.png" alt="logo NYSL">
+        </div>
+    </header>
+    <!--Acá termina el Header-->
+
+    <!--Acá empieza el contenido-->
+    <div class="content">
+        <!--Acá empieza el menú-->
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game_info.html">Game Info</a></li>
+                <li><a href="rules.html">Rules &amp; Policies</a></li>
+                <li><a href="about.html">About NYSL</a></li>
+                <li id="selected">Registration</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!--Acá termina el menú-->
+        <div class="registration">
+
+            <!--Acá empieza el formulario-->
+            <div class="boxregistration">
+                <h1><img src="styles/nysl_logo.png" alt="logo NYSL"> </h1>
+                <h1>Registration Form</h1>
+                <div class="advise">All fields marked * are required</div><br>
+                <form action="show_data.html" method="get">
+                    <fieldset>
+                        <label>Player's First Name*:</label>
+                        <input type="text" name="first_name" id="first_name" size="20" autofocus="" required="">
+                        <label>Last Name*:</label>
+                        <input type="text" name="last_name" id="last_name" size="26" required=""><br>
+                        <label>Street Address:</label>
+                        <input type="text" name="street_address" id="street_address" size="67"><br>
+                        <label>City:</label>
+                        <input type="text" name="city" id="city" size="40">
+                        <label>Zip Code:</label>
+                        <input type="text" name="zip_code" id="zip_code" size="22"><br>
+                        <label>Birth Date*:</label>
+                        <input type="date" name="birth_date" id="birth_date" size="20" required="">
+                        <label>Gender:</label>
+                        <input type="checkbox" name="gender" value="Female">Female
+                        <input type="checkbox" name="gender" value="Male">Male <br>
+                        <label>Grade:</label>
+                        <input type="checkbox" name="grade" value="Pre-School">Pre-School
+                        <input type="checkbox" name="grade" value="1st">1<sup>st</sup>
+                        <input type="checkbox" name="grade" value="2nd">2<sup>nd</sup>
+                        <input type="checkbox" name="grade" value="3rd">3<sup>rd</sup>
+                        <input type="checkbox" name="grade" value="4th">4<sup>th</sup>
+                        <input type="checkbox" name="grade" value="5th">5<sup>th</sup>
+                        <br>
+                        <label>Parent/Guardian*:</label>
+                        <input type="text" name="parent_name" id="parent_name" size="65" required=""><br>
+                        <label>Contact Phone*:</label>
+                        <input type="tel" name="contact_phone" id="contact_phone" size="24" required="">
+                        <label>Contact eMail*:</label>
+                        <input type="email" name="contact_email" id="contact_email" size="24" required="">
+                        <br><br>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Which elementary schools do you live near?</legend>
+                        <label>1<sup>st</sup> Closest School:</label>
+                        <select name="first_closest" id="first_closest">
+                            <option value="" hidden="">Please select</option>
+                            <option>AJ Katzenmaier</option>
+                            <option>Marjorie P Hart</option>
+                            <option>Greenbay</option>
+                            <option>North Elementary</option>
+                            <option>Howard A Yeager</option>
+                            <option>South Elementary</option>
+                        </select> <br>
+                        <label>2<sup>nd</sup> Closest School:</label>
+                        <select name="second_closest" id="second_closest">
+                            <option value="" hidden="">Please select</option>
+                            <option>AJ Katzenmaier</option>
+                            <option>Marjorie P Hart</option>
+                            <option>Greenbay</option>
+                            <option>North Elementary</option>
+                            <option>Howard A Yeager</option>
+                            <option>South Elementary</option>
+                        </select>
+                        <br><br>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Game position expertise/preferences</legend>
+                        <div class="thick">What position(s) do you normally play? (check all that apply)</div>
+                        <div class="centered">
+                            <input type="checkbox" name="position-played" value="Forward">Forward
+                            <input type="checkbox" name="position-played" value="Midfield">Midfield
+                            <input type="checkbox" name="position-played" value="Defense">Defense
+                            <input type="checkbox" name="position-played" value="Goalkeeper">Goalkeeper
+                        </div>
+                        <br>
+
+                        <div class="thick">What position(s) do you want to play? (check all that apply)</div>
+                        <div class="centered">
+                            <input type="checkbox" name="position-wanted" value="Forward">Forward
+                            <input type="checkbox" name="position-wanted" value="Midfield">Midfield
+                            <input type="checkbox" name="position-wanted" value="Defense">Defense
+                            <input type="checkbox" name="position-wanted" value="Goalkeeper">Goalkeeper
+                        </div>
+                        <br>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Uniform requirements</legend>
+                        <div class="thick"><input type="checkbox" id="have-uniform" name="have-uniform" value="Already Have Uniform">Already Have a Uniform</div><br>
+
+                        <label class="thick">Jersey Size*:</label>
+                        <select name="jersey-Size" required="">
+                            <option value="" hidden="">Please select</option>
+                            <option>Youth Small</option>
+                            <option>Youth Medium</option>
+                            <option>Youth Large</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                            <option>Extra-Large</option>
+                        </select>
+
+                        <br>
+                        <label class="thick">Shorts Size*:</label>
+                        <select name="shorts-Size" required="">
+                            <option value="" hidden="">Please select</option>
+                            <option>Youth Small</option>
+                            <option>Youth Medium</option>
+                            <option>Youth Large</option>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                            <option>Extra-Large</option>
+                        </select>
+                        <br><br>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Permission to play</legend>
+                        <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the "League" accepting the registrant for its soccer programs and activities. I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.</p>
+                        <p>By entering your name below, I hereby agree and authorize the above. In addition, by signing below, I also akcnowledge that I have read the cancellation policy and agree to its terms.</p> <br>
+
+                        <label>Parent/Guardian Signature*:</label>
+                        <input type="text" name="signature" size="25" id="signature" required="">
+
+                        <label>Date*:</label>
+                        <input type="date" name="date" size="25" id="date" required="">
+                    </fieldset> <br>
+                    <input class="submitBtn" type="submit" value="Submit">
+                    <br><br>
+                </form>
+            </div>
+            <!--Acá termina el formulario-->
+
+        </div>
+
+        <!--Acá termina el contenido-->
+    </div>
+
+    <!--Acá comienza el footer-->
+    <footer>
+        <p>Made in Argentina por @nec2 solutions.</p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" />
+            </a>
+        </p>
+    </footer>
+    <!--Acá termina el footer-->
+</body>
+
+</html>
