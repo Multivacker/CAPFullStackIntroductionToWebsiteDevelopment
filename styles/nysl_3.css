@@ -506,6 +506,7 @@ input[type=text],
 input[type=date],
 input[type=tel],
 input[type=email] {
+    color: white;
     background-color: rgba(76, 175, 80, 0.0);
     border: none;
     border-bottom: 2px solid chartreuse;
